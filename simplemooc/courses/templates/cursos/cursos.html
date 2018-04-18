@@ -17,9 +17,9 @@
         <div class="l-box">
             <a href="{{ course.get_absolute_url }}">
             {% if course.image %}
-            <img src="{{ course.image.url }}" alt="{{ course.name }}" />
+                <img src="{{ course.image.url }}" alt="{{ course.name }}" />
             {% else %}
-            <img src="{% static 'img/course-image.png' %}" alt="{{ course.name }}" />
+                <img src="http://placehold.it/400x250" />
             {% endif %}
             </a>
         </div>
