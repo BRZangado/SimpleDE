@@ -123,3 +123,7 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'simplemooc', 'media')
 MEDIA_URL = '/media/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+CONTACT_EMAIL = 'bruesmanbruesman@hotmail.com'
+DEFAULT_FROM_EMAIL = 'contato@cursos.com.br'
