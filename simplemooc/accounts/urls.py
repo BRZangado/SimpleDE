@@ -7,6 +7,7 @@ app_name = 'accounts'
 
 urlpatterns = [
 	path('entrar/', authviews.login, {'template_name':'accounts/login.html'}, name='login'),
+	path('registrar/', views.register,  name='register'),
 	#path('<int:pk>', views.CourseDetails, name='CourseDetails'),
 	#path('<slug:slug>', views.CourseDetails, name='CourseDetails'),
 ]
